@@ -15,11 +15,6 @@ if not target_dir.exists():
 
 b3 = b3mapper.B3Mapper()
 
-def build_output(entry):
-    size = entry.stat().st_size
-    name = entry.name
-    print(f"{file} - {size:>6d}")
-
 for entry in target_dir.iterdir():
     if entry.is_file():
         b3.parse_earnings(entry)
