@@ -1,6 +1,6 @@
 import argparse
 from pathlib import Path
-from lib.b3 import b3mapper
+from b3 import b3mapper
 
 parser = argparse.ArgumentParser()
 parser.add_argument("path")
